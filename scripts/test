@@ -1,17 +1,16 @@
 #!/bin/bash
-# references
+#
+# References
 # http://serverfault.com/questions/683605/docker-container-time-timezone-will-not-reflect-changes
+# http://mirrors.aliyun.com/help/centos
+# http://mirrors.aliyun.com/help/epel
+# 
+
+set -x
+set -e
 
 docker run --name centos-base-test \
-    -it \
+    -it --rm \
+    -v $(pwd):/share \
     centos:7.2.1511 \
     /bin/bash
-
-# steps
-# replace /etc/yum.repos.d/CentOS-Base.repo with aliyun mirror repo
-# yum makecache fast; yum -y --setopt=tsflags=nodocs update
-# yum -y --setopt=tsflags=nodocs install epel-release
-# yum makecache fast
-# yum -y --setopt=tsflags=nodocs install net-tools wget telnet whois tree screen tmux bash-completion vim git
-# yum -y --setopt=tsflags=nodocs install htop iftop iotop nmap lsof nc
-# yum clean all
