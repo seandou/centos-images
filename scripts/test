@@ -6,7 +6,7 @@
 # http://mirrors.aliyun.com/help/epel
 # 
 
-set -x
+# set -x
 set -e
 
 docker run --name centos-base-test \
