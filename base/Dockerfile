@@ -15,7 +15,7 @@ RUN yum makecache fast \
     && yum clean all
 
 # RUN yum -y --setopt=tsflags=nodocs install epel-release \
-#     && yum makecache fast && \
+#     && yum makecache fast \
 #     && yum clean all
 
 # 
