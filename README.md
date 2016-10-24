@@ -16,6 +16,10 @@ Building
 Build each image
 
 ```
+https://github.com/seandou/centos-images.git
+
+# cd <image path>
+
 docker build -t <your-tag> .
 ```
 
