@@ -31,4 +31,5 @@ References
 
 ### China mirrors
 
+- [阿里云镜像仓库](https://cr.console.aliyun.com/#/imageList)
 - [网易蜂巢 DH 镜像](https://c.163.com/hub#/m/library/)
