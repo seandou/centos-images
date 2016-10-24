@@ -12,5 +12,5 @@ set -e
 docker run --name centos-base-test \
     -it --rm \
     -v $(pwd):/share \
-    centos:7.2.1511 \
+    centos-base \
     /bin/bash
