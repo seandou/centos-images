@@ -11,12 +11,10 @@ ADD CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo
 ADD epel.repo /etc/yum.repos.d/epel.repo
 
 RUN yum makecache fast \
-    && yum -y --setopt=tsflags=nodocs update \
-    && yum clean all
+    && yum -y --setopt=tsflags=nodocs update
 
 # RUN yum -y --setopt=tsflags=nodocs install epel-release \
-#     && yum makecache fast \
-#     && yum clean all
+#     && yum makecache fast
 
 # 
 RUN yum -y --setopt=tsflags=nodocs install \
