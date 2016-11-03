@@ -2,7 +2,7 @@
 # Refrences
 # https://github.com/creationix/nvm
 # 
-# docker build -t centos-nodejs:v6.9.1 .
+# docker build -t centos-nodejs:boron .
 # 
 
 FROM centos-base:latest
@@ -12,7 +12,7 @@ RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.s
 
 # Install node with nvm
 RUN source ~/.bashrc \
-    && nvm install v6.9.1 \
+    && nvm install lts/boron \
     && npm install -g npm cnpm
 
 CMD ["/bin/bash"]
