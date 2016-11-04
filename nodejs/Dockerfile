@@ -13,6 +13,9 @@ RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.s
 # Install node with nvm
 RUN source ~/.bashrc \
     && nvm install lts/boron \
-    && npm install -g npm cnpm
+    && nvm alias default lts/boron \
+    && npm install -g cnpm --registry=https://registry.npm.taobao.org \
+    && cnpm install -g npm \
+    && cnpm install -g yarn
 
 CMD ["/bin/bash"]
