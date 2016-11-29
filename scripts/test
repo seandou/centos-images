@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # References
 # http://serverfault.com/questions/683605/docker-container-time-timezone-will-not-reflect-changes
@@ -12,5 +12,5 @@ set -e
 docker run --name centos-base-test \
     -it --rm \
     -v $(pwd):/share \
-    centos-base \
+    seandou/centos-base \
     /bin/bash
