@@ -2,7 +2,7 @@
 # https://github.com/CentOS/sig-cloud-instance-images
 # https://github.com/CentOS/CentOS-Dockerfiles
 # 
-# docker build -t centos-base .
+# docker build -t seandou/centos-base .
 
 FROM centos:7.2.1511
 

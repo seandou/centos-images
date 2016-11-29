@@ -2,10 +2,10 @@
 # Refrences
 # https://github.com/creationix/nvm
 # 
-# docker build -t centos-nodejs:boron .
+# docker build -t seandou/centos-nodejs:boron .
 # 
 
-FROM centos-base:latest
+FROM seandou/centos-base:latest
 
 # Install nvm and load env
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash

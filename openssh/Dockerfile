@@ -2,9 +2,9 @@
 # References
 # https://github.com/CentOS/CentOS-Dockerfiles/tree/master/ssh/centos7
 # 
-# docker build -t centos-openssh .
+# docker build -t seandou/centos-openssh .
 
-FROM centos-base
+FROM seandou/centos-base
 
 # Install openssh-server
 RUN yum -y install openssh-server passwd \
